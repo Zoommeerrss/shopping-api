@@ -32,6 +32,7 @@ pluginManagement {
 }
 
 rootProject.name = "shopping-api"
-include("app")
+include("http")
 include("domain")
 include("datastore")
+include("core")

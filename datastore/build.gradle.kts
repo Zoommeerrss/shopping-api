@@ -11,6 +11,7 @@ plugins {
     kotlin("plugin.spring")
     kotlin("plugin.jpa")
     kotlin("plugin.allopen")
+    id("info.solidsoft.pitest") version "1.7.4"
 }
 
 group = "shopping.datastore"
@@ -30,7 +31,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     // migrations
-    implementation("org.flywaydb:flyway-core:9.1.6")
+    //implementation("org.flywaydb:flyway-core:9.1.6")
 
     // postgres
     implementation("org.postgresql:postgresql:42.5.0")
@@ -43,14 +44,20 @@ dependencies {
     implementation(kotlin("script-runtime"))
 
     // Use JUnit Jupiter for testing.
+    testImplementation(platform("org.junit:junit-bom:5.8.2"))
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
     testImplementation("org.junit.platform:junit-platform-launcher:1.9.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
 
     // mockk
-    testImplementation("io.mockk:mockk:1.4.1")
+    testImplementation("io.mockk:mockk:1.9.3")
+
+    // projects
+    implementation(project(":core"))
 
 }
 
+apply(plugin = "info.solidsoft.pitest")
 apply(plugin = "io.spring.dependency-management")
 
 the<io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension>().apply {
@@ -61,6 +68,7 @@ the<io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension>().a
 
 tasks.test {
     useJUnitPlatform()
+    dependsOn(":datastore:pitest")
 }
 
 tasks.withType<KotlinCompile>() {
@@ -81,4 +89,18 @@ allOpen {
 
 tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
     enabled = false
+}
+
+pitest {
+    targetClasses.add("com.shoppingapi.*")
+    targetTests.add("com.shoppingapi.*Test")
+    testSourceSets.add(sourceSets.test)
+    mainSourceSets.add(sourceSets.main)
+    jvmArgs.addAll("-Xmx1024m", "-Dspring.test.constructor.autowire.mode=all")
+    useClasspathFile.set(true)     //useful with bigger projects on Windows
+    fileExtensionsToFilter.addAll("xml", "orbit")
+    outputFormats.addAll("XML", "HTML")
+    timestampedReports.set(false)
+    junit5PluginVersion.set("0.15")
+    exportLineCoverage.set(true)
 }

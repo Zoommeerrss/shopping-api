@@ -1,6 +1,6 @@
 package com.shoppingapi.datastore.dataprovider.repository.postgres
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.OnlineUser
+import com.shoppingapi.core.datastore.entity.postgres.OnlineUser
 import org.springframework.data.repository.PagingAndSortingRepository
 import org.springframework.stereotype.Repository
 

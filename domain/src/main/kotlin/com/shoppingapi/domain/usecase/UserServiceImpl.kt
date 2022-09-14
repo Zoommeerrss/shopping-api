@@ -1,10 +1,10 @@
 package com.shoppingapi.domain.usecase
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.OnlineUser
+import com.shoppingapi.core.datastore.entity.postgres.OnlineUser
 import com.shoppingapi.datastore.usecase.port.UserPort
-import com.shoppingapi.domain.entity.dto.UserDTO
-import com.shoppingapi.domain.mapper.toDTO
-import com.shoppingapi.domain.mapper.toEntity
+import com.shoppingapi.core.domain.entity.UserDTO
+import com.shoppingapi.core.domain.mapper.toDTO
+import com.shoppingapi.core.domain.mapper.toEntity
 import com.shoppingapi.domain.usecase.port.UserServicePort
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.Page

@@ -1,7 +1,7 @@
 package com.shoppingapi.datastore.dataprovider.entity
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Item
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.postgres.Item
+import com.shoppingapi.core.datastore.entity.postgres.Shop
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test

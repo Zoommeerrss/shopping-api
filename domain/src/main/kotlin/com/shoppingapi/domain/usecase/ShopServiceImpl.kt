@@ -1,10 +1,10 @@
 package com.shoppingapi.domain.usecase
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.postgres.Shop
 import com.shoppingapi.datastore.usecase.port.ShopPort
-import com.shoppingapi.domain.entity.dto.ShopDTO
-import com.shoppingapi.domain.mapper.toDTO
-import com.shoppingapi.domain.mapper.toEntity
+import com.shoppingapi.core.domain.entity.ShopDTO
+import com.shoppingapi.core.domain.mapper.toDTO
+import com.shoppingapi.core.domain.mapper.toEntity
 import com.shoppingapi.domain.usecase.port.ShopServicePort
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.data.domain.Page
@@ -31,8 +31,6 @@ class ShopServiceImpl: ShopServicePort {
     override fun findAll(pageNo: Int, pageSize: Int, sortBy: String): Page<ShopDTO> {
         val paging: Pageable = PageRequest.of(pageNo, pageSize, Sort.by(sortBy))
         val results: Page<Shop> = port.findAll(paging)
-
-        println("Invoices: " + port.findAll())
 
         return results.map(Shop::toDTO)
     }

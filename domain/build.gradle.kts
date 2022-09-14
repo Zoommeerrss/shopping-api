@@ -9,6 +9,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.12.RELEASE"
     kotlin("jvm")
     kotlin("plugin.spring")
+    id("info.solidsoft.pitest") version "1.7.4"
 }
 
 group = "shopping.domain"
@@ -41,8 +42,10 @@ dependencies {
 
     // projects
     implementation(project(":datastore"))
+    implementation(project(":core"))
 }
 
+apply(plugin = "info.solidsoft.pitest")
 apply(plugin = "io.spring.dependency-management")
 
 the<io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension>().apply {
@@ -53,6 +56,7 @@ the<io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension>().a
 
 tasks.test {
     useJUnitPlatform()
+    dependsOn(":domain:pitest")
 }
 
 tasks.withType<KotlinCompile>() {
@@ -67,4 +71,18 @@ tasks.withType<KotlinCompile> {
 
 tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
     enabled = false
+}
+
+pitest {
+    targetClasses.add("com.shoppingapi.*")
+    targetTests.add("com.shoppingapi.*Test")
+    testSourceSets.add(sourceSets.test)
+    mainSourceSets.add(sourceSets.main)
+    jvmArgs.addAll("-Xmx1024m", "-Dspring.test.constructor.autowire.mode=all")
+    useClasspathFile.set(true)     //useful with bigger projects on Windows
+    fileExtensionsToFilter.addAll("xml", "orbit")
+    outputFormats.addAll("XML", "HTML")
+    timestampedReports.set(false)
+    junit5PluginVersion.set("0.15")
+    exportLineCoverage.set(true)
 }

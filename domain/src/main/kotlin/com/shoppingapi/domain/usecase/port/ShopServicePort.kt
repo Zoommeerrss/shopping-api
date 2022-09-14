@@ -1,6 +1,6 @@
 package com.shoppingapi.domain.usecase.port
 
-import com.shoppingapi.domain.entity.dto.ShopDTO
+import com.shoppingapi.core.domain.entity.ShopDTO
 import org.springframework.data.domain.Page
 import java.math.BigDecimal
 import java.util.*

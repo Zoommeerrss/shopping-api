@@ -1,8 +1,6 @@
 package com.shoppingapi.datastore.usecase
 
-import com.shoppingapi.datastore.dataprovider.entity.dynamodb.Invoice
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
-import com.shoppingapi.datastore.dataprovider.repository.dynamodb.port.InvoiceRepository
+import com.shoppingapi.core.datastore.entity.postgres.Shop
 import com.shoppingapi.datastore.dataprovider.repository.postgres.ShopRepository
 import com.shoppingapi.datastore.usecase.port.ShopPort
 import org.springframework.beans.factory.annotation.Autowired
@@ -17,9 +15,6 @@ class ShopPortImpl: ShopPort {
 
     @Autowired
     private lateinit var shopRepository: ShopRepository
-
-    @Autowired
-    private lateinit var invoiceRepository: InvoiceRepository
 
     override fun findTotal(): Long = shopRepository.count()
 
@@ -43,7 +38,4 @@ class ShopPortImpl: ShopPort {
 
     override fun findAllByDateCreatedGreaterThanEquals(dateCreated: Date): List<Shop> = shopRepository.findByCreateDateGreaterThanEqual(dateCreated)
 
-    override fun findAll(): List<Invoice?>? {
-        return invoiceRepository.findAll()
-    }
 }

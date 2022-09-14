@@ -1,7 +1,7 @@
 package com.shoppingapi.domain.usecase.port
 
-import com.shoppingapi.domain.entity.dto.ShopDTO
-import com.shoppingapi.domain.entity.report.ShopReportDTO
+import com.shoppingapi.core.domain.entity.ShopDTO
+import com.shoppingapi.core.domain.entity.report.ShopReportDTO
 import java.math.BigDecimal
 import java.util.*
 

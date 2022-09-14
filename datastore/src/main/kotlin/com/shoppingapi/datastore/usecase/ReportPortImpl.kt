@@ -1,8 +1,8 @@
 package com.shoppingapi.datastore.usecase
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
-import com.shoppingapi.datastore.dataprovider.report.ShopReport
-import com.shoppingapi.datastore.dataprovider.report.aggregate.ShopReportAggregate
+import com.shoppingapi.core.datastore.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.report.ShopReport
+import com.shoppingapi.core.datastore.entity.report.aggregate.ShopReportAggregate
 import com.shoppingapi.datastore.dataprovider.repository.postgres.ReportRepository
 import com.shoppingapi.datastore.usecase.port.ReportPort
 import org.springframework.beans.factory.annotation.Autowired

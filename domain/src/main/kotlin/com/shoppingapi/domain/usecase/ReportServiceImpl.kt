@@ -1,10 +1,10 @@
 package com.shoppingapi.domain.usecase
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.postgres.Shop
 import com.shoppingapi.datastore.usecase.port.ReportPort
-import com.shoppingapi.domain.entity.dto.ShopDTO
-import com.shoppingapi.domain.entity.report.ShopReportDTO
-import com.shoppingapi.domain.mapper.toDTO
+import com.shoppingapi.core.domain.entity.ShopDTO
+import com.shoppingapi.core.domain.entity.report.ShopReportDTO
+import com.shoppingapi.core.domain.mapper.toDTO
 import com.shoppingapi.domain.usecase.port.ReportServicePort
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service

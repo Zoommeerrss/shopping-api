@@ -1,6 +1,6 @@
 package com.shoppingapi.datastore.dataprovider.repository.postgres
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.postgres.Shop
 import org.springframework.data.repository.PagingAndSortingRepository
 import org.springframework.stereotype.Repository
 import java.math.BigDecimal

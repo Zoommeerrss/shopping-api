@@ -1,7 +1,7 @@
 package com.shoppingapi.datastore.usecase
 
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.OnlineUser
+import com.shoppingapi.core.datastore.entity.postgres.OnlineUser
 import com.shoppingapi.datastore.dataprovider.repository.postgres.UserRepository
 import com.shoppingapi.datastore.usecase.port.UserPort
 import org.springframework.beans.factory.annotation.Autowired

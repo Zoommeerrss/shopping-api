@@ -1,5 +1,7 @@
 package com.shoppingapi.domain.entity.dto
 
+import com.shoppingapi.core.domain.entity.ItemDTO
+import com.shoppingapi.core.domain.entity.ShopDTO
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test

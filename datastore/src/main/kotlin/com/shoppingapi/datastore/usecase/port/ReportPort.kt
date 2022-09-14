@@ -1,7 +1,7 @@
 package com.shoppingapi.datastore.usecase.port
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
-import com.shoppingapi.datastore.dataprovider.report.ShopReport
+import com.shoppingapi.core.datastore.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.report.ShopReport
 import java.math.BigDecimal
 import java.util.*
 

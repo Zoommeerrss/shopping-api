@@ -1,7 +1,6 @@
 package com.shoppingapi.datastore.usecase.port
 
-import com.shoppingapi.datastore.dataprovider.entity.dynamodb.Invoice
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.postgres.Shop
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import java.math.BigDecimal
@@ -18,7 +17,4 @@ interface ShopPort {
     fun findAllByUserIdentifier(userIdentifier: String): List<Shop>
     fun findAllByTotalGreaterThan(total: BigDecimal): List<Shop>
     fun findAllByDateCreatedGreaterThanEquals(dateCreated: Date): List<Shop>
-
-    // invoice
-    fun findAll(): List<Invoice?>?
 }

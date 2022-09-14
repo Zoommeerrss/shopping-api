@@ -1,6 +1,6 @@
 package com.shoppingapi.domain.usecase.port
 
-import com.shoppingapi.domain.entity.dto.UserDTO
+import com.shoppingapi.core.domain.entity.UserDTO
 import org.springframework.data.domain.Page
 import java.util.*
 

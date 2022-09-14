@@ -1,7 +1,7 @@
 package com.shoppingapi.datastore.dataprovider.repository.postgres
 
-import com.shoppingapi.datastore.dataprovider.entity.postgres.Shop
-import com.shoppingapi.datastore.dataprovider.report.aggregate.ShopReportAggregate
+import com.shoppingapi.core.datastore.entity.postgres.Shop
+import com.shoppingapi.core.datastore.entity.report.aggregate.ShopReportAggregate
 import org.springframework.data.jpa.repository.Query
 import org.springframework.data.repository.PagingAndSortingRepository
 import org.springframework.data.repository.query.Param

@@ -1,8 +1,8 @@
 version: "3.0"
 
 services:
-  db-postgres:
-    container_name: postgres_container
+  db-postgres-shopping:
+    container_name: postgres_shopping_container
     image: postgres:14.1-alpine
     ports:
       - '5432:5432'
@@ -12,18 +12,6 @@ services:
       POSTGRES_PASSWORD: System20
     volumes:
       - db-postgres:/var/lib/postgresql/data
-
-  pgadmin:
-    container_name: pgadmin4_container
-    image: dpage/pgadmin4
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: root@root.com
-      PGADMIN_DEFAULT_PASSWORD: System20
-    ports:
-      - "16543:80"
-    depends_on:
-      - db-postgres
 
   aws-localstack:
     container_name: aws-localstack
