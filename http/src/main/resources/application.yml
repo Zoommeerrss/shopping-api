@@ -75,3 +75,25 @@ amazon:
     region: sa-east-1
     accesskey: key
     secretkey: key2
+    
+########################################################
+# Show details of health endpoint                      #
+########################################################
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics, prometheus
+    base-path: /
+    path-mapping:
+      health: healthcheck
+      prometheus: metrics
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoint:
+    metrics:
+      enabled: false
+    prometheus:
+      enabled: true

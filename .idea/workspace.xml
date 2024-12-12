@@ -5,85 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e603d7-dd8c-435a-8513-f62c201ee11f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/entity/enum/DispatchStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/entity/enum/MessageEnum.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/entity/request/DispatchRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/entity/request/ItemRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/entity/request/ShopRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/entity/request/UserRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/datastore/entity/dynamodb/Dispatch.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/domain/entity/DispatchDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/api/response/ItemResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/api/response/ShopResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/api/response/UserResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/enum/DispatchStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/report/response/ShopReportResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/http/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/api/enum/MessageEnum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/enum/MessageEnum.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/api/request/ItemRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/request/ItemRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/api/request/ShopRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/request/ShopRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/api/request/UserRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/core/api/entity/request/UserRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/api/response/ItemResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/api/response/ShopResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/api/response/UserResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entity/report/response/ShopReportResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/entity/report/response/ShopReportResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entrypoint/ShopControllerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/entrypoint/ShopControllerImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/entrypoint/UsersControllerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/entrypoint/UsersControllerImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/exception/business/ItemNotFoundException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/exception/business/ItemNotFoundException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/exception/business/OrderNotFoundException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/exception/business/OrderNotFoundException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/exception/business/ProductNotFoundException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/exception/business/ProductNotFoundException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/exception/business/UserNotFoundException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/exception/business/UserNotFoundException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/exception/system/ErrorField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/exception/system/ErrorField.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/exception/system/ErrorMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/exception/system/ErrorMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/exception/system/ShopControllerAdvice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/kotlin/com/shoppingapi/app/exception/system/ShopControllerAdvice.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/kotlin/com/shoppingapi/app/mapper/ApiMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/api/mapper/ApiMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/migration/V1_0__create_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/resources/db/migration/V1_0__create_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/db/migration/V1_1__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/main/resources/db/migration/V1_1__init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/kotlin/com/shoppingapi/app/entity/api/response/ShopResponseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/http/src/test/kotlin/com/shoppingapi/core/api/entity/api/response/ShopResponseTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/configuration/DynamoDBConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/configuration/DynamoDBConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/configuration/PostgresDataSourceConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/configuration/PostgresDataSourceConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/entity/dynamodb/Invoice.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/entity/postgres/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/datastore/entity/postgres/Item.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/entity/postgres/OnlineUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/datastore/entity/postgres/OnlineUser.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/entity/postgres/Shop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/datastore/entity/postgres/Shop.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/report/ShopReport.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/datastore/entity/report/ShopReport.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/report/aggregate/ShopReportAggregate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/datastore/entity/report/aggregate/ShopReportAggregate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/dynamodb/InvoiceRepositoryImpl.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/dynamodb/port/InvoiceRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/postgres/ReportRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/postgres/ReportRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/postgres/ShopRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/postgres/ShopRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/postgres/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/dataprovider/repository/postgres/UserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/ReportPortImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/ReportPortImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/ShopPortImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/ShopPortImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/UserPortImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/UserPortImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/port/ReportPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/port/ReportPort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/port/ShopPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/port/ShopPort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/port/UserPort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/main/kotlin/com/shoppingapi/datastore/usecase/port/UserPort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/test/kotlin/com/shoppingapi/datastore/dataprovider/entity/DynamoDBTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datastore/src/test/kotlin/com/shoppingapi/datastore/dataprovider/entity/ShopTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/datastore/src/test/kotlin/com/shoppingapi/datastore/dataprovider/entity/ShopTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/entity/dto/ItemDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/domain/entity/ItemDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/entity/dto/ShopDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/domain/entity/ShopDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/entity/dto/UserDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/domain/entity/UserDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/entity/report/ShopReportDTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/domain/entity/report/ShopReportDTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/mapper/DomainMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/shoppingapi/core/domain/mapper/DomainMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/ReportServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/ReportServiceImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/ShopServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/ShopServiceImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/UserServiceImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/UserServiceImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/port/ReportServicePort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/port/ReportServicePort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/port/ShopServicePort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/port/ShopServicePort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/port/UserServicePort.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/shoppingapi/domain/usecase/port/UserServicePort.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/kotlin/com/shoppingapi/domain/entity/dto/ShopDTOTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/kotlin/com/shoppingapi/domain/entity/dto/ShopDTOTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,17 +35,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shopping-api" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shopping-api" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="shopping-api" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
